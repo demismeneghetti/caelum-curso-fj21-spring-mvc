@@ -28,7 +28,7 @@ public class TarefasController {
 
 		JdbcTarefaDao dao = new JdbcTarefaDao();
 		dao.adiciona(tarefa);
-		return "tarefa/adicionada";
+		return "redirect:listaTarefas";
 	}
 
 	@RequestMapping("listaTarefas")
